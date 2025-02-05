@@ -57,7 +57,7 @@ def handle_app_mention(event_data):
     text_without_mention = re.sub(bot_mention, "", text).strip()
 
     # Get response from GPT
-    response = get_gpt_response(text, "C:/Users/lalikumar/benchsci_bot/data.json")
+    response = get_gpt_response(text, "data.json")
     print(response)
 
     # Post the response back to the Slack channel
